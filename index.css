@@ -1,0 +1,55 @@
+@font-face {
+  font-family: dds;
+  src: url(dds.ttf);
+}
+@font-face {
+  font-family: dig7;
+  src: url(dig7.ttf);
+}
+
+* {
+margin: 0;
+padding: 0;
+background-color: #1D253E;
+color: #E34C3D;
+max-width: 100%;
+}
+h1, h2, h3 {
+  font-family: dds;
+}
+p, a {
+    font-family: dig7;
+}
+ @media only screen and (max-width: 320px) {
+
+section .personalia {
+  width: 100vw;
+  max-width: 100%;
+}
+.personalia h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: dds;
+}
+.personalia h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: dds;
+}
+.watney {
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+  max-height: 25vh;
+}
+img {
+   max-width: 40%;
+   max-height: 40%;
+}
+.watney p {
+  width: 40%;
+}
+#timer {
+  font-size: 3.5rem;
+}
+ }

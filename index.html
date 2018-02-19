@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>SpaceX Dashboard</title>
+  <link href="index.css" rel="stylesheet" type="text/css"/>
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1"/>
+</head>
+
+<body>
+<nav>
+  <ul>
+    <li><a href="#">personalia</a></li>
+    <li><a href="#">flight info</a></li>
+    <li><a href="#">aircraft status</a></li>
+    <li><a href="#">supplies</a></li>
+  </ul>
+</nav>
+  <section class="personalia">
+    <h1>PERSONALIA</h1>
+  <h2>Hello, mr. Watney</h1>
+    <div class="watney">
+      <img src="martian.jpg"/>
+      <p>Name:</br> Mark Watney</br>
+      Date of Birth:</br> 29/06/1971</br></p>
+    </div>
+    <div class="others">
+      <img src="#"/> <p>Name Name</p>
+      <img src="#"/> <p>Name Name</p>
+      <img src="#"/> <p>Name Name</p>
+      <p id="contactAll">Contact all</p>
+    </div>
+    <div>
+      <h1>Estimated time of arrival</h1>
+        <p id="timer"></p>
+    </div>
+  </section>
+
+<script>
+var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("timer").innerHTML =  hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+}, 1000);
+</script>
+</body>
+</html>
