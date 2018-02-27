@@ -10,9 +10,11 @@
 * {
 margin: 0;
 padding: 0;
-background-color: #1D253E;
 color: #E34C3D;
 max-width: 100%;
+}
+body {
+  background-color: #1D253E;
 }
 h1, h2, h3 {
   font-family: dds;
@@ -21,7 +23,25 @@ p, a {
     font-family: dig7;
 }
  @media only screen and (max-width: 320px) {
-
+nav ul {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #00496f;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+nav ul li:hover {
+  color: orange;
+}
 section .personalia {
   width: 100vw;
   max-width: 100%;
@@ -48,6 +68,23 @@ img {
 }
 .watney p {
   width: 40%;
+}
+.eta {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact {
+  display: flex;
+  flex-flow: row;
+  width: 100vw;
+  justify-content: space-around;
+  font-size: 2rem;
+}
+.contact img {
+  width: 50px;
 }
 #timer {
   font-size: 3.5rem;
